@@ -18,7 +18,7 @@ import java.util.*;
 
 public class MainApp extends Application{
 
-    Stage startWindow;
+    private Stage startWindow;
     private int variables=2;
     private int column;
     private Set trueValuesArr = new TreeSet();
@@ -722,7 +722,10 @@ public class MainApp extends Application{
     }
 
 
-
+    /**
+     * @param arr boolean two-dimensional array
+     * @return String-table of input two-dimensional array
+     */
     public String showArray(Boolean[][] arr){
         StringBuilder stringBuilder = new StringBuilder();
         for (int i=0;i<arr.length;i++){
@@ -735,6 +738,10 @@ public class MainApp extends Application{
         return stringBuilder.toString();
     }
 
+    /**
+     * @param arr string two-dimensional array
+     * @return String-table of input two-dimensional array
+     */
     public String showStringArray(String[][] arr){
         StringBuilder stringBuilder = new StringBuilder();
         for (int i=0;i<arr.length;i++){
@@ -787,6 +794,11 @@ public class MainApp extends Application{
         s=sb.toString();
         return s;
     }
+
+    /**
+     * @param arr set of values for which function has true answer
+     * @return string of disjunctive normal form for function
+     */
     public String getDDNF (Set arr){
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("Досконала Диз'юнктивна нормальна форма (ДДНФ):");
