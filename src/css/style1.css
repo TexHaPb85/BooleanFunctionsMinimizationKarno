@@ -1,0 +1,10 @@
+.root {
+    -fx-background-image: url("199.jpg");
+}
+.label{
+    -fx-font-size: 16px;
+    -fx-font-family: "Arial Black";
+    -fx-text-fill: white;
+    /*-fx-background-image: url("50.jpg");*/
+    -fx-background-color: blue;
+}
