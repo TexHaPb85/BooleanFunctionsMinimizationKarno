@@ -216,9 +216,7 @@ public class MainApp extends Application{
                     button.setText("1");
                     button.setPrefSize(50,30);
                     button.setStyle("-fx-background-color: #ccff99; ");
-                    button.setOnAction(event -> {
-                        button.setStyle("-fx-background-color: #ff1100; ");
-                    });
+                    button.setOnAction(event -> button.setStyle("-fx-background-color: #ff1100; "));
                     gridPane.add(button,4,j);
                     c++;
                 }
